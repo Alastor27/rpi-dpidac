@@ -12,6 +12,8 @@
 #include <linux/module.h>
 #include <linux/platform_device.h>
 
+#include <uapi/linux/media-bus-format.h>
+
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>
 #include <video/videomode.h>
@@ -23,6 +25,7 @@
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_print.h>
 #include <drm/drm_probe_helper.h>
+#include <drm/drm_edid.h>
 
 // ~ 20 timings line + comments
 #define READ_SIZE_MAX 2048
